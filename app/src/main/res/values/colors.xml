@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimarydark">#FFFFFFFF</color>
+    <color name="colorAccent">#FFFFFFFF</color>
+    <color name="icon_tint">#FFFFFFFF</color>
+    <color name="nav_selectedColor">#FFFFFFFF</color>
+    <color name="card_bg_color">#FFFFFFFF</color>
+</resources>

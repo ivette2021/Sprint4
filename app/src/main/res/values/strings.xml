@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sprint4_CV</string>
+    <string name="IB">Informacion</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="never_stop_learning">Never Stop Learning</string>
+    <string name="share">Share</string>
+    <string name="freelancer_designer">Freelancer Designer</string>
+    <string name="_1_years_of_experience">1 years of experience</string>
+    <string name="automation_and_robotics_engineer">Automation and robotics Engineer</string>
+    <string name="ivette_valdivia">Ivette Valdivia</string>
+
+</resources>

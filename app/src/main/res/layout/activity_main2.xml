@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/linkedinButtonSecond"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="1dp"
+        android:drawableLeft="@drawable/linkedin"
+        android:drawablePadding="8dp"
+        android:gravity="end"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:scaleType="fitCenter"
+        android:text="@string/linkedin"
+        app:layout_constraintBottom_toTopOf="@+id/whatsappButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/whatsappButton"
+        android:layout_width="157dp"
+        android:layout_height="49dp"
+        android:contentDescription="@string/IB"
+        android:drawableLeft="@drawable/whatsapp"
+
+        android:drawablePadding="8dp"
+        android:gravity="end"
+
+        android:text="@string/whatsapp"
+        app:layout_constraintBottom_toTopOf="@+id/emailButtonSecond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkedinButtonSecond" />
+
+    <Button
+        android:id="@+id/emailButtonSecond"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:drawableLeft="@drawable/email_24"
+        android:drawablePadding="8dp"
+        android:gravity="end"
+        android:text="@string/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
