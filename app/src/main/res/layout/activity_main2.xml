@@ -5,53 +5,95 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
-    <Button
-        android:id="@+id/linkedinButtonSecond"
-        android:layout_width="157dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="1dp"
-        android:drawableLeft="@drawable/linkedin"
-        android:drawablePadding="8dp"
-        android:gravity="end"
-        android:icon="@drawable/baseline_account_circle_24"
-        android:scaleType="fitCenter"
-        android:text="@string/linkedin"
-        app:layout_constraintBottom_toTopOf="@+id/whatsappButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:ignore="RtlHardcoded" />
-
-    <Button
-        android:id="@+id/whatsappButton"
-        android:layout_width="157dp"
-        android:layout_height="49dp"
-        android:contentDescription="@string/IB"
-        android:drawableLeft="@drawable/whatsapp"
-
-        android:drawablePadding="8dp"
-        android:gravity="end"
-
-        android:text="@string/whatsapp"
-        app:layout_constraintBottom_toTopOf="@+id/emailButtonSecond"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linkedinButtonSecond" />
-
-    <Button
-        android:id="@+id/emailButtonSecond"
-        android:layout_width="154dp"
-        android:layout_height="53dp"
-        android:drawableLeft="@drawable/email_24"
-        android:drawablePadding="8dp"
-        android:gravity="end"
-        android:text="@string/email"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whatsappButton" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </Space>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:text="@string/redes_sociales"
+            android:textColor="@color/rclaro"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/linkedinButtonSecond"
+            android:layout_width="157dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/vclaro"
+            android:drawableLeft="@drawable/linkedin"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:scaleType="fitCenter"
+            android:text="@string/linkedin"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/whatsappButton"
+            android:layout_width="157dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/vclaro"
+            android:contentDescription="@string/IB"
+            android:drawableLeft="@drawable/whatsapp"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:text="@string/whatsapp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/emailButtonSecond"
+            android:layout_width="154dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/vclaro"
+            android:drawableLeft="@drawable/email_24"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:text="@string/email"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/volver"
+            android:layout_width="75dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/vclaro"
+            android:drawableLeft="@drawable/returnb"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:scaleType="fitCenter"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

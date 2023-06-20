@@ -4,19 +4,28 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.sprint4_cv.databinding.ActivityMain2Binding;
 
 public class MainActivity2 extends AppCompatActivity {
 
     private ActivityMain2Binding binding;
-
+private Button volver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMain2Binding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+binding.volver.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(MainActivity2.this,MainActivity.class);
+        startActivity(intent);
+    }
+});
 
         binding.linkedinButtonSecond.setOnClickListener(new View.OnClickListener() {
             @Override

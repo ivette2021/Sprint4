@@ -4,60 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="398dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="126dp"
+        android:src="@drawable/fotodeperfil"
+        app:civ_border_color="@color/vclaro"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="422dp"
+        android:layout_height="309dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="181dp"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-7dp">
 
-        <ImageView
-            android:id="@+id/profileImage"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:src="@drawable/profile_picture" />
-
-        <TextView
-            android:id="@+id/nameTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ivette_valdivia"
-            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/professionTextView"
             android:layout_width="wrap_content"
+            android:textColor="@color/voscuro"
             android:layout_height="wrap_content"
             android:text="@string/automation_and_robotics_engineer"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/experienceTextView"
             android:layout_width="wrap_content"
+            android:textColor="@color/voscuro"
             android:layout_height="wrap_content"
             android:text="@string/_1_years_of_experience"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/experienceText"
             android:layout_width="wrap_content"
+            android:textColor="@color/voscuro"
             android:layout_height="wrap_content"
             android:text="@string/freelancer_designer"
-            android:textSize="16sp" />
+            android:textSize="22sp" />
+
         <TextView
             android:id="@+id/motivationTextView"
             android:layout_width="wrap_content"
+            android:textColor="@color/voscuro"
             android:layout_height="wrap_content"
             android:text="@string/never_stop_learning"
-            android:textSize="16sp" />
+            android:textSize="22sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></Space>
 
         <Button
             android:id="@+id/button"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/voscuro"
             android:layout_width="match_parent"
+            android:textSize="20dp"
+
             android:layout_height="wrap_content"
-            android:text="@string/share"
-            android:onClick="openSecondActivity" />
+            android:onClick="openSecondActivity"
+            android:text="@string/share" />
 
 
     </LinearLayout>

@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.sprint4_cv.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private ActivityMainBinding binding;
 
+    private com.example.sprint4_cv.databinding.ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
